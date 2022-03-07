@@ -18,8 +18,8 @@ import "react-toastify/dist/ReactToastify.css";
 toast.configure();
 
 export const PageRoute = () => {
-  const [IsAuthenticated, setIsAuthenticated] = useState(false);
-
+  const [IsAuthenticated, setIsAuthenticated] = useState(true);
+  console.log(IsAuthenticated);
   const setAuth = (Boolean) => {
     setIsAuthenticated(Boolean);
   };
@@ -41,7 +41,7 @@ export const PageRoute = () => {
 
   useEffect(() => {
     checkAuth();
-  }, []);
+  }, [IsAuthenticated]);
 
   return (
     <>

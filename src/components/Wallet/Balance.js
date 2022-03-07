@@ -88,7 +88,7 @@ export const Balance = () => {
 
   useEffect(() => {
     getBalance();
-  }, []);
+  }, [balance]);
 
   return (
     <div className=" mb-10 pb-1 rounded-lg shadow-xl box w-auto px-32 border-[#376db3] border-8 xl:max-w-xl ">

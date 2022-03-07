@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { BsCaretUpFill, BsCaretDownFill } from "react-icons/bs";
+import useState from "react-usestateref";
 
 export const WalletHistory = () => {
-  const [walletHistory, setWalletHistory] = useState();
+  const [walletHistory, setWalletHistory, wallethistorylatest] = useState();
 
   async function getWalletHistory() {
     try {
@@ -15,7 +16,8 @@ export const WalletHistory = () => {
       );
 
       const parseRes = await response.json();
-      setWalletHistory(parseRes[0]);
+      setWalletHistory(parseRes);
+      // console.log(wallethistorylatest.current);
     } catch (error) {
       console.error(error.message);
     }
