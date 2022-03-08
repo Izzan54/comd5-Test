@@ -12,6 +12,7 @@ import {
   Login,
 } from "components";
 import Home from "components/LandingPage/pages/Home";
+import { ForgotPassword } from "components/ForgotPassword/ForgotPassword";
 
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -59,6 +60,7 @@ export const PageRoute = () => {
             )
           }
         />
+        <Route exact path="/forgotpassword" element={<ForgotPassword />} />
         <Route
           exact
           path="/register"
