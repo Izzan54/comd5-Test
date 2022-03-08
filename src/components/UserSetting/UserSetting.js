@@ -45,25 +45,27 @@ export const UserSetting = () => {
        lg:items-start 
         lg:gap-10 lg:flex-row 
 
-       xl:items-start xl:mt-10 xl:gap-20 xl:flex-row "
+       xl:items-start xl:mt-10 xl:gap-20 xl:flex-row
+        "
       >
         <div
           className="mb-4 xl:mb-0 rounded-lg shadow-xl box w-11/12
-        lg: xl:w-auto border-[#376db3] border-8"
+        lg: xl:w-auto border-[#376db3] border-8
+        "
         >
           <div className="mx-3 my-5 sm:mx-20 sm:my-10 ">
-            <p className="mb-3 lg:text-2xl text-xl font-bold text-white sm:text-3xl">
+            <p className="mb-3 lg:text-2xl text-xl xl:text-4xl font-bold text-white sm:text-3xl">
               Personal Information
             </p>
             <div className="flex flex-wrap justify-center w-full ">
               <img
                 src="https://www.creative-tim.com/learning-lab/tailwind-starter-kit/img/team-1-800x800.jpg"
                 alt="..."
-                className="h-32 border-none rounded-full shadow xs:h-44
+                className="h-32 border-none rounded-full shadow xs:h-44 xl:h-40
                 lg:h-28"
               />
               <p
-                className="mt-8 ml-2 text-xl font-bold text-white 
+                className="mt-8 ml-2 text-xl font-bold text-white xl:text-3xl
               lg:text-xl xxs:text-2xl xxs:mt-8 xxs:ml-6 xs:text-5xl xs:mt-10 xs:ml-10 "
               >
                 {firstname} <br />
@@ -72,10 +74,10 @@ export const UserSetting = () => {
             </div>
             <div className="mb-3 ">
               <label
-                className="flex gap-2 mt-6 mb-2 text-sm font-bold text-white sm:text-base"
+                className="flex gap-2 mt-6 mb-2 text-sm font-bold text-white sm:text-base xl:text-xl"
                 htmlFor="id"
               >
-                <FaRegUser className="text-xl text-[#10a6f1]" />
+                <FaRegUser className="text-xl text-[#10a6f1] xl:text-2xl xl:mb-2" />
                 ID
               </label>
               <input
@@ -88,10 +90,10 @@ export const UserSetting = () => {
             </div>
             <div>
               <label
-                className="flex gap-2 mt-6 mb-2 text-sm font-bold text-white sm:text-base"
+                className="flex gap-2 mt-6 mb-2 text-sm font-bold text-white sm:text-base xl:text-xl"
                 htmlFor="contact"
               >
-                <FaPhoneAlt className="text-xl text-[#10a6f1]" />
+                <FaPhoneAlt className="text-xl text-[#10a6f1] xl:text-2xl xl:mb-2 " />
                 Contact
               </label>
               <input
@@ -102,10 +104,10 @@ export const UserSetting = () => {
             </div>
             <div>
               <label
-                className="flex gap-1 mt-6 mb-2 text-sm font-bold text-white sm:text-base"
-                htmlFor="address"
+                className="flex gap-1 mt-6 mb-2 text-sm font-bold text-white sm:text-base xl:text-xl"
+                htmlFor="address "
               >
-                <IoMdHome className="text-2xl text-[#10a6f1]" />
+                <IoMdHome className="text-2xl text-[#10a6f1] xl:text-2xl xl:mb-2" />
                 Address
               </label>
               <input
@@ -116,7 +118,7 @@ export const UserSetting = () => {
             </div>
             <div className="flex items-center justify-center ">
               <button
-                className="px-4 py-2 mt-3 text-base font-bold text-white sm:px-6 sm:py-2 sm:text-xl rounded-3xl"
+                className="px-4 py-2 mt-3 text-base font-bold text-white sm:px-6 sm:py-2 sm:text-xl rounded-3xl xl:mt-7"
                 id="button"
                 type="button"
               >
@@ -133,17 +135,17 @@ export const UserSetting = () => {
           {" "}
           <div className="h-full mx-3 my-5 sm:mx-20 sm:my-10">
             <p
-              className="mb-3 text-xl
+              className="mb-3 text-xl xl:text-4xl
             lg:text-2xl  font-bold text-white sm:text-2xl"
             >
               Email & Password
             </p>
             <div className="mb-3">
               <label
-                className="flex gap-2 mt-6 mb-2 text-sm font-bold text-white sm:text-base"
+                className="flex gap-2 mt-6 mb-2 text-sm font-bold text-white sm:text-base xl:text-xl"
                 htmlFor="email"
               >
-                <MdOutlineMailOutline className="text-2xl text-[#10a6f1]" />
+                <MdOutlineMailOutline className="text-2xl text-[#10a6f1] xl:text-2xl xl:mb-2" />
                 Email
               </label>
               <input
@@ -154,10 +156,10 @@ export const UserSetting = () => {
             </div>
             <div>
               <label
-                className="flex gap-2 mt-6 mb-2 text-sm font-bold text-white sm:text-base"
+                className="flex gap-2 mt-6 mb-2 text-sm font-bold text-white sm:text-base xl:text-xl "
                 htmlFor="password"
               >
-                <AiOutlineLock className="text-2xl text-[#10a6f1]" />
+                <AiOutlineLock className="text-2xl text-[#10a6f1] xl:text-2xl xl:mb-2" />
                 Password
               </label>
               <input
@@ -168,7 +170,7 @@ export const UserSetting = () => {
             </div>
             <div className="flex items-center justify-center ">
               <button
-                className="px-4 py-2 mt-3 text-base font-bold text-white sm:px-6 sm:py-2 sm:text-xl rounded-3xl"
+                className="px-4 py-2 mt-3 text-base font-bold text-white sm:px-6 sm:py-2 sm:text-xl rounded-3xl  xl:mt-7"
                 id="button"
                 type="button"
               >

@@ -36,6 +36,7 @@ export const SideBar = ({ toggled, handleToggleSidebar }) => {
       collapsed={toggled ? false : toggleCollapse}
       breakPoint="md"
       onToggle={handleToggleSidebar}
+      //onClick={toggled ? false : toggleCollapse}
     >
       <SidebarHeader>
         <div className="logotext">
