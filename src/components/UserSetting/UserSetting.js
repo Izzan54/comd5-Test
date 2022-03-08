@@ -54,7 +54,7 @@ export const UserSetting = () => {
         "
         >
           <div className="mx-3 my-5 sm:mx-20 sm:my-10 ">
-            <p className="mb-3 lg:text-2xl text-xl xl:text-4xl font-bold text-white sm:text-3xl">
+            <p className="mb-3 lg:text-2xl text-xl xl:text-3xl font-bold text-white sm:text-3xl">
               Personal Information
             </p>
             <div className="flex flex-wrap justify-center w-full ">
