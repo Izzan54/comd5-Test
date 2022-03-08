@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import personpc from "../../asset/images/person-pc.png";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
-// import { Layout } from "components";
 
 export const Login = ({ setAuth }) => {
   const [Inputs, setInputs] = useState({
@@ -45,7 +44,7 @@ export const Login = ({ setAuth }) => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen p-4 bg-gray-100 lg:justify-center">
+    <div className="flex items-center justify-center min-h-screen p-4 bg-gray-100 lg:justify-center ">
       <div className="flex flex-col overflow-hidden bg-white rounded-md shadow-lg max md:flex-row md:flex-1 lg:max-w-screen-md ">
         <div className="p-4 py-6 text-white bg-blue-500 md:w-80 md:flex-shrink-0 md:flex md:flex-col md:items-center md:justify-evenly ">
           <img
